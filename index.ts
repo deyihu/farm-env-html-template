@@ -12,6 +12,13 @@ const OPTIONS: OptionsType = {
 const EMPTY_STRING = '';
 const EXP_CHAR = '%';
 
+function trim(key: string) {
+    if (!key.includes(' ')) {
+        return key;
+    }
+    return key.trim();
+}
+
 
 
 function templateKeys(str: string) {
@@ -48,6 +55,7 @@ function transformHTML(content: string) {
         const keys = templateKeys(content);
         const env = process.env || {};
         keys.forEach(key => {
+            key = trim(key);
             const value = env[key] || '';
             if (!value) {
                 const message = `[farm_html_template]:not find env key:${key} `
