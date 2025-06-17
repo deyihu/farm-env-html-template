@@ -1,6 +1,6 @@
 {
   "name": "farm-env-html-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Using environment variables in HTML",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
