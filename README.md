@@ -41,7 +41,7 @@ export default defineConfig({
 ```
 //.env
 
-FARM_PAGE-TITLE=HELLO
+FARM_TITLE=HELLO
 
 
 ```
